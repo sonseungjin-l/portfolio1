@@ -3,202 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>세븐일레븐</title>
+    <title>부동산 중계 플랫폼</title>
     <link rel="stylesheet" href="./style/common.css">
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/common.js" defer></script>
 </head>
 <body>
-<div id="wrap" class="main">
-    <div id="header">
-        <div class="header_top">
-            <div class="inner">
-                <p class="logo">
-                    <a href="#"><img src="https://www.7-eleven.co.kr/front/img/com/logo.png" alt="7-EVEVEN"></a>
-                </p>
-                <ul id="gnb">
-                    <li class="menu01"><a href="#">7-EVEVEN소개</a>
-                        <ul>
-                            <li><a href="#"></a>회사소개</li>
-                            <li><a href="#"></a>회사경영</li>
-                            <li><a href="#"></a>채용안내</li>
-                            <li><a href="#"></a>고객의 소리</li>
-                            <li><a href="#"></a>공지사항</li>
-                        </ul></li>
-                    <li class="menu02"><a href="#">상품</a>
-                        <ul>
-                            <li><a href="#"></a>Fresh Food</li>
-                            <li><a href="#"></a>행사 상품</li>
-                            <li><a href="#"></a>할인/멤버쉽 카드</li>
-                            <li><a href="#"></a>서비스 안내</li>
-                            <li><a href="#"></a>스마트 Pick</li>
-                        </ul></li>
-                    <li class="menu03"><a href="#">이벤트</a>
-                        <ul>
-                            <li><a href="#"></a>진행중인 이벤트</li>
-                            <li><a href="#"></a>완료된 이벤트</li>
-                            <li><a href="#"></a>어린이 미술대회</li>
-                            
-                        </ul></li>
-                    <li class="menu04"><a href="#">상생협력</a>
-                        <ul>
-                            <li><a href="#"></a>상품입점상담</li>
-                            <li><a href="#"></a>동반성장</li>
-                        </ul></li>
-                    <li class="menu05"><a href="#">창업문의</a>
-                        <ul>
-                            <li><a href="#"></a>창업 가이드</li>
-                            <li><a href="#"></a>창업 상담</li>
-                            <li><a href="#"></a>창업 설명회</li>
-                            <li><a href="#"></a>창업 성공기</li>
-                            <li><a href="#"></a>경영주계약서조회</li>
-                        </ul></li>
-                </ul>
-                <div>
-                    <ul class="Supporting Navigation">
-                        <li><a href="#" title="점포찾기 팝업열기" class="util_store store_open"><span> <svg><path></path></svg> 점포찾기</span></a></li>
-                        <li><a href="#" title="로그인" class="login"><span> <svg><path></path></svg>로그인</span></a></li>
-                        <li><a href="#" title="롯데 홈페이지 바로가기" class="btn_lotte store_open"><img src="/front/img/com/img_group_logo.png" alt="롯데 로고"></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="gnb_app_menu">
-                    <a href="#"><img src="/front/img/main/gnb_appmenu_link.png" alt="세븐앱 소개 메뉴 바로가기"></a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <div id="container">
-        <div class="nav_main">
+    <header>
+        <h1>
+            <a href="./"><img src="./pngwing.com.png" alt="부동산 중개 플랫폼 로고"></a></h1>
+        <nav id="gnb">
             <ul>
-                <li class="nav01" style="left: 1300px"><a href="#"><span class="hide">창업문의</span></a></li>
-                <li class="nav02" style="left: 1300px"><a href="#" data-link="https://www.youtube.com/user/7elevenkorea"><span class="hide">youtube</span></a></li>
-                <li class="nav03" style="left: 1300px"><a href="#" data-link="https://www.instagram.com/user/7elevenkorea/"><span class="hide">instagram</span></a></li>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">매물</a></li>
+                <li><a href="#">문의하기</a></li>
+                <li><a href="#">커뮤니티</a></li>
             </ul>
-        </div>
-        <h1>7-EVEVEN</h1>
-        <div class="main_cont01 main_cont">
-            <h2 class="hide">MAIN HOME</h2>
-            <!-- <div class="wrap_tab_cont01"-->
-                <!--D: 활성화 li on클래스 추가-->
-                <!-- <ul> -->
-                    <!-- <li class="tab_event on"><a href="#"><span>EVENT</span></a></li>
-                    <li class="tab_about"><a href="#"><span>7-EVEVEN 소개</span></a></li> -->
-                    <!-- ::after // ul::after -->
-                <!-- </ul>
-            </div>  -->
-            <!--//wrap_tab_cont01-->
-            <section id="sliderWrap">
-                <h2 class="hidden">EVENT</h2>
-                <div id="btnPos">
-                    <a href="#" class="prevBtn">prev</a>
-                    <a href="#" class="nextBtn">next</a>
-                </div>
-                <div id="btnNum">
-                    <a href="#" class="on">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                </div>
-            </section>
-            <section class="eventItemSection active">
-                <div class="titleWrap">
-                    <h1 class="sectionName">1월 행사상품</h1>
-                    <div class="buttonWrap"><a href="/_goods/event" class="textButton"><span class="buttonText">전체보기</span>
-                    <div class="icon"><img src="/assets/assets/imgs/more.png" alt="전체보기"></div>
-                </a>
+        </nav>
+        <nav class="membership">
+            <ul>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">중개회원</a></li>
+                <li><a href="#">가입문의</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section class="container">
+            <h1>부동산</h1>
+            <p class="introduce"><em>최고</em>의 부동산 <em>매물</em>을 <em>한눈</em>에 확인해보세요.</p>
+            <div class="search-container">
+                <input type="text" id="search" placeholder="지역명 혹은 단지명을 입력하세요">
+                <button onclick="search()">검색</button>
             </div>
-                </div>
-                <ul class="categories">
-                    <li class="category"></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </section>
-            <div class="content_wrap">
-                <ul>
-                    <li><img src="01_1.jpg" alt=""></li>
-                    <li><img src="01_2.jpg" alt=""></li>
-                    <li><img src="01_3.jpg" alt=""></li>
-                    <li><img src="01_4.jpg" alt=""></li>
-                </ul>
-            </div>
-            <section>
-                <h1>창업문의</h1>
-                <ul class="cont_franchise">
-                    <li><a href="#"><strong>창업상담</strong>
-                    <span>"최고의 상품과 서비스로
+            <div class="sale-item">
+                <div class="big-bnr">
+                    <strong>
+                        <em>아파트</em>
+                        •오피스텔 •분양권
+                    </strong>
+                    <p>
+                        매매, 전세, 월세 매물을 시세 및 실거래가 정보와 함께
                         <br>
-                        "성공 창업을 도와드립니다."
-                    </span></a></li>
-                    <li class="icon_franchise02"><a href="#"><strong>가맹타입별조건</strong>
-                    <span>"성공창업의 길, 세븐일레븐이"
-                        <br>
-                        "최선을 다해 안내해드립니다."
-                    </span></a></li>
-                </ul>               
-            </section>
-        </div>
-    </div>
-</div>
-<footer>
-    <div class="inner">
-        <div class="footer_top">
-            <dl class="footer_util">
-                <dt>CUSTOMER</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a href="#">고객의 소리</a>
-                        </li>
-                        <li>
-                            <a href="#">채용문의</a>
-                        </li>
-                        <li>
-                            <a href="#">창업상담</a>
-                        </li>
-                        <li>
-                            <a href="#">입점문의</a>
-                        </li>
-                    </ul>
-                </dd>
-                <dt>RECRUIT</dt>
-                <dd>
-                    <ul>
-                        <li>
-                            <a href="#">기업채용</a>
-                        </li>
-                        <li>
-                            <a href="#">MATE</a>
-                        </li>
-                        <li>
-                            <a href="#">윤리핫라인</a>
-                        </li>
-                        <li>
-                            <a href="#">불공정거래신고</a>
-                        </li>
-                        <li>
-                            <a href="#">안전*보건핫라인</a>
-                        </li>
-                    </ul>
-                </dd>
-            </dl>
-            
-                <strong>FAMILY SITE</strong>
-                
-                <div>
-                    <div class="pr">
-                        <img src="/front/img/com/qr.gif" alt="세븐일레븐 QR코드, 스마트폰으로 스캔하면 세븐일레븐 모바일 사이트로 연결">
+                        지도에서 쉽게 확인하세요!
+                    </p>
+                    <div class="btns">
+                        <button class="first_button">
+                            <span class="btn_overlay"></span>
+                            <span class="btn_underlay"></span>
+                            <span class="btn_content">매물 찾기</span>
+                        </button>
+                        <button class="first_button">
+                            <span class="btn_overlay"></span>
+                            <span class="btn_underlay"></span>
+                            <span class="btn_content">실거래 찾기</span>
+                        </button>
                     </div>
                 </div>
-                <div>
-                    <ul>
-                        <li><a href="#">사이트맵</a></li>
-                        <li><a href="#">개인정보처리방침</a></li>
-                        <li><a href="#">영상정보처리기기 운영*관리 방침</a></li>
-                    </ul>
+                <div class="small-bnr">
+                    <button class="second_button">
+                        <span  class="btn_overlay"></span>
+                        <span  class="btn_underlay"></span>
+                        <span  class="btn_content">
+                            <strong>빌라●주택</strong>
+                            <span>연립, 빌라, 단독, 다가구 매물</span>
+                        </span>
+                    </button>
+                    <button class="third_button">
+                        <span class="btn_overlay"></span>
+                        <span class="btn_underlay"></span>
+                        <span class="btn_content">
+                            <strong>원룸●투룸</strong>
+                            <span>50m² 이하 전 ● 월세 매물</span>
+                        </span>
+                    </button>
+                    <button class="fourth_button">
+                        <span class="btn_overlay"></span>
+                        <span class="btn_underlay"></span>
+                        <span class="btn_content">
+                            <strong>상가●사무실</strong>
+                            <span>임대, 매매, 창업용 매물</span>
+                        </span>
+                    </button>
+                    <button class="fifth_button">
+                        <span class="btn_overlay"></span>
+                        <span class="btn_underlay"></span>
+                        <span class="btn_content">
+                            <strong>공장●창고 ●빌딩 ●토지</strong>
+                            <span>비주거 대●중●소 산업용 매물</span>
+                        </span>
+                    </button>
                 </div>
             </div>
+            <div class="property-list">
+                <h1>추천 매물</h1>
+                <div class="property">
+                    <img src="https://i.namu.wiki/i/fTbw0s-yoTiJKNAohPCYKw1X1sJIx9QQ-Fis96THQA6o4YmlNvu7Du5im3_bL1aUUXTIVK1WIXntTI55NB6pTQ.webp" alt="">
+                    <h2>럭셔리 아파트</h2>
+                    <p class="property-loca">위치: 서울 강남구</p>
+                    <p class="property-price">가격: 10억 원</p>
+                    <button class="cta-button" onclick="showAlert('럭셔리 아파트')">상세보기</button>
+                </div>
+                <div class="property">
+                    <img src="./img/경기도 용인시 전원주택.jpg" alt="">
+                    <h2>전원주택</h2>
+                    <p class="property-loca">위치: 경기 용인시</p>
+                    <p class="property-price">가격: 5억 원</p>
+                    <button class="cta-button" onclick="showAlert('전원주택')">상세보기</button>
+                </div>
+                <div class="property">
+                    <img src="https://www.sentv.co.kr/data/sentv/image/2024/10/14/sentv20241014000096.800x.9.jpg" alt="">
+                    <h2>오피스텔</h2>
+                    <p class="property-loca">위치: 서울 마포구</p>
+                    <p class="property-price">가격: 3억 원</p>
+                    <button class="cta-button" onclick="showAlert('오피스텔')">상세보기</button>
+                </div>
+            </div>
+        </section>
+        <section class="features-section" id="features">
+            <h2>Premium Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Smart Home</h3>
+                    <p>Advanced home automation system for modern living</p>
+                </div>
+                <div class="feature-card">
+                    <h3>24/7 Security</h3>
+                    <p>Round-the-clock security with CCTV surveillance</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Fitness Center</h3>
+                    <p>State-of-the-art gym and wellness facilities</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Parking</h3>
+                    <p>Secured underground parking with EV charging</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+            <div>
+                <h3>이메일 및 연락처</h3>
+                <p>Email: info@luxuryapts.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+            <div>
+                <h3>주소</h3>
+                <p>123 Luxury Avenue</p>
+                <p>Downtown, City 12345</p>
+            </div>
+            <div>
+                <h3>이용시간</h3>
+                <p>Mon-Fri: 9:00 AM - 6:00 PM</p>
+                <p>Sat-Sun: 10:00 AM - 4:00 PM</p>
+            </div>
         </div>
-    </div>
-</footer>
+    <script>
+        function showAlert(property) {
+            alert(property + " 문의가 접수되었습니다! 빠른 시일 내에 연락드리겠습니다.");
+        }
+    </script>
 </body>
 </html>
