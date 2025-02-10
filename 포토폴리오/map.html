@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지도 분양페이지</title>
+    <link rel="stylesheet" href="./style/map.css">
+</head>
+<body>
+
+    <header>
+        <h1><a href="./index.html">승진부동산</a></h1>
+        <nav id="gnb">
+            <ul>
+                <li><a href="./Comdpany.html">회사소개</a></li>
+                <li><a href="./map.html">분양 지도</a></li>
+                <li><a href="./customer_center.html">고객센터</a></li>
+                <!-- <li><a href="notice.html">커뮤니티</a></li> -->
+            </ul>
+        </nav>
+        <nav class="membership">
+            <ul>
+                <li><a href="./log_in.html">로그인</a></li>
+                <li><a href="#">중개사무소 가입 <br> 및 광고문의</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+
+<main>
+    <section>
+        <h2>지도 보기</h2>
+        <div id="map">[지도 로드 중...]
+            <!-- 지도를 표시할 div 입니다 -->
+<div id="map" style="width:100%;height:350px;"></div>
+        <button onclick="locateUser()">현재 위치 찾기</button>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="section">
+            <h3>회사 정보</h3>
+            <p>부동산 분양 주식회사</p>
+            <p>주소: 서울특별시 강남구 테헤란로 123</p>
+            <p>사업자등록번호: 123-45-67890</p>
+            <p>대표번호: 02-1234-5678</p>
+        </div>
+        <div class="section">
+            <h3>고객센터</h3>
+            <p>문의전화: 1588-0000</p>
+            <p>이메일: support@realestate.com</p>
+        </div>
+        <div class="section">
+            <h3>빠른 링크</h3>
+            <ul>
+                <li><a href="#">홈</a></li>
+                <li><a href="#">분양정보</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">문의하기</a></li>
+            </ul>
+        </div>
+        <div class="section">
+            <h3>소셜 미디어</h3>
+            <ul>
+                <li><a href="#">페이스북</a></li>
+                <li><a href="#">인스타그램</a></li>
+                <li><a href="#">유튜브</a></li>
+            </ul>
+        </div>
+    </div>
+    <p class="copyright">&copy; <span id="year"></span> 부동산 분양 주식회사. All rights reserved.</p>
+</footer>
+
+<script src="https://apis.map.kakao.com/" async defer></script>
+
+<script>
+    function initMap() {
+        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+    mapOption = { 
+        center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+        level: 3 // 지도의 확대 레벨
+    };
+
+// 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+var map = new kakao.maps.Map(mapContainer, mapOption); 
+    }
+</script>
+</script>
+</script>
+
+</body>
+</html>

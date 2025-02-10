@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부동산 중개사무소 가입 및 광고 문의</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>중개사무소 가입 및 광고 문의</h1>
+    <form id="contact-form">
+        <label for="name">이름</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">이메일</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">전화번호</label>
+        <input type="text" id="phone" name="phone" required>
+
+        <label for="message">문의 사항</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">제출하기</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // 폼 제출 기본 동작 막기
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const message = document.getElementById('message').value;
+
+        // 여기서 폼 데이터를 처리하는 로직을 추가할 수 있습니다.
+        alert(`제출된 정보:\n이름: ${name}\n이메일: ${email}\n전화번호: ${phone}\n문의 사항: ${message}`);
+        
+        // 폼 초기화
+        document.getElementById('contact-form').reset();
+    });
+</script>
+
+</body>
+</html>

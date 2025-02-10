@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부동산 중계 플랫폼</title>
+    <link rel="stylesheet" href="./style/main.css">
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/common.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1><a href="./index.html">승진부동산</a></h1>
+        <nav id="gnb">
+            <ul>
+                <li><a href="./Comdpany.html">회사소개</a></li>
+                <li><a href="./map.html">분양 지도</a></li>
+                <li><a href="./customer_center.html">고객센터</a></li>
+            </ul>
+        </nav>
+        <nav class="membership">
+            <ul>
+                <li><a href="./log_in.html">로그인</a></li>
+                <li><a href="#">중개사무소 가입 <br> 및 광고문의</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <section id="solgan">
+        <h1 class="hidden">부동산</h1>
+        <h2 class="introduce"><em>최고</em>의 부동산 <em>매물</em>을 <em>한눈</em>에 확인해보세요.</h2>
+        <p>최고의 장소, 꿈같은 집을 만날 수 있는 기회</p>
+        <div class="search-solgan">
+            <input type="text" id="search" placeholder="지역명 혹은 단지명을 입력하세요">
+            <button onclick="search()">검색</button>
+        </div>
+    </section>  
+    <main>  
+        <div class="property-list">
+                <h1 class="property-title">분양 정보</h1>
+                <div class="property">
+                    <img src="https://i.namu.wiki/i/fTbw0s-yoTiJKNAohPCYKw1X1sJIx9QQ-Fis96THQA6o4YmlNvu7Du5im3_bL1aUUXTIVK1WIXntTI55NB6pTQ.webp" alt="">
+                    <h2>럭셔리 아파트</h2>
+                    <p class="property-loca">위치: 서울 강남구</p>
+                    <p class="property-price">가격: 10억 원</p>
+                    <button class="cta-button" onclick="showAlert('럭셔리 아파트')">상세보기</button>
+                </div>
+                <div class="property">
+                    <img src="./img/경기도 용인시 전원주택.jpg" alt="">
+                    <h2>전원주택</h2>
+                    <p class="property-loca">위치: 경기 용인시</p>
+                    <p class="property-price">가격: 5억 원</p>
+                    <button class="cta-button" onclick="showAlert('전원주택')">상세보기</button>
+                </div>
+                <div class="property">
+                    <img src="https://www.sentv.co.kr/data/sentv/image/2024/10/14/sentv20241014000096.800x.9.jpg" alt="">
+                    <h2>오피스텔</h2>
+                    <p class="property-loca">위치: 서울 마포구</p>
+                    <p class="property-price">가격: 3억 원</p>
+                    <button class="cta-button" onclick="showAlert('오피스텔')">상세보기</button>
+                </div>
+        </div>
+        
+
+        <section class="features-section" id="features">
+            <h2>단지 기능</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>스마트 홈 시스템</h3>
+                    <p>현대적인 생활을 위한 고급 홈 자동화 시스템</p>
+                </div>
+                <div class="feature-card">
+                    <h3>24시간 보안 시스템</h3>
+                    <p>CCTV 감시를 통한 24시간 보안</p>
+                </div>
+                <div class="feature-card">
+                    <h3>친환경 단지 설계</h3>
+                    <p>ㅇ</p>
+                </div>
+                <div class="feature-card">
+                    <h3>고급 커뮤니티 시설</h3>
+                </div>
+                <div class="feature-card">
+                    <h3>피트니스 센터</h3>
+                    <p>최신식 체육관 및 웰니스 시설</p>
+                </div>
+                <div class="feature-card">
+                    <h3>주차장</h3>
+                    <p>전기차 충전이 가능한 안전한 지하 주차장</p>
+                </div>
+            </div>
+        </section>
+        <section class="location">
+            <div class="location_content">
+                <h2>위치안내</h2>
+                <img src="/api/placeholder/800/400" alt="위치도">
+                <p>
+                    지하철 역세권 5분 거리<br>
+                    대형마트, 학교, 병원 등 생활 인프라 완비
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="section">
+                <h3>회사 정보</h3>
+                <p>부동산 분양 주식회사</p>
+                <p>주소: 서울특별시 강남구 테헤란로 123</p>
+                <p>사업자등록번호: 123-45-67890</p>
+                <p>대표번호: 02-1234-5678</p>
+            </div>
+            <div class="section">
+                <h3>고객센터</h3>
+                <p>문의전화: 1588-0000</p>
+                <p>이메일: support@realestate.com</p>
+            </div>
+            <div class="section">
+                <h3>빠른 링크</h3>
+                <ul>
+                    <li><a href="#">홈</a></li>
+                    <li><a href="#">분양정보</a></li>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">문의하기</a></li>
+                </ul>
+            </div>
+            <div class="section">
+                <h3>소셜 미디어</h3>
+                <ul>
+                    <li><a href="#">페이스북</a></li>
+                    <li><a href="#">인스타그램</a></li>
+                    <li><a href="#">유튜브</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; <span id="year"></span> 부동산 분양 주식회사. All rights reserved.</p>
+    </footer>
+    <script>
+        function showAlert(property) {
+            alert(property + " 문의가 접수되었습니다! 빠른 시일 내에 연락드리겠습니다.");
+        }
+
+        /* 푸터 */
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

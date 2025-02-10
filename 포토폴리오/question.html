@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자주 묻는 질문</title>
+    <link rel="stylesheet" href="style/question.css">
+    <script src="js/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <header>
+        <h1><a href="./index.html">승진부동산</a></h1>
+            <ul>
+                <li><a href="./Comdpany.html">회사소개</a></li>
+                <li><a href="./map.html">분양 지도</a></li>
+                <li><a href="./customer_center.html">고객센터</a></li>
+                <!-- <li><a href="notice.html">커뮤니티</a></li> -->
+            </ul>
+        </nav>
+        <nav class="membership">
+            <ul>
+                <li><a href="./log_in.html">로그인</a></li>
+                <li><a href="#">중개사무소 가입 <br> 및 광고문의</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <section>
+        <nav id="snb">
+            <h2 class="hidden">customer center 서브메뉴</h2>
+                <ul>
+                    <li class="on"><a href="notice.html">공지사항</a></li>
+                    <li><a href="#">자주 묻는 질문</a></li>
+                    <li><a href="customer_center.html">1:1문의</a></li>
+                </ul>
+        </nav>
+        <p>사용자의 편의를 위해 <span>자주 묻는 질문과 답변</span>을 모아놓았습니다.</p>
+        <p>원하시는 질문을 찾아보세요!</p>
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="faq-question">Q1. 서비스 이용 방법은?<span></span></div>
+            <div class="faq-answer">A1. 회원가입 후 로그인하여 서비스를 이용하실 수 있습니다.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Q2. 결제 방법은?<span></span></div>
+            <div class="faq-answer">A2. 신용카드, 계좌이체, 간편결제 등이 지원됩니다.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Q3. 환불 정책은?<span></span></div>
+            <div class="faq-answer">A3. 결제 후 7일 이내 환불 요청 시 전액 환불 가능합니다.</div>
+        </div>
+    </div>
+</section>
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
+                const answer = faqItem.querySelector('.faq-answer');
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
