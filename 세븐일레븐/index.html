@@ -20,6 +20,7 @@
                 <li class="goLogin"><a href="#">로그인</a></li>
                 <li><a href="#" title="롯데 홈페이지 바로가기" class="goHomepage"><img src="/front/img/com/img_group_logo.png" alt="롯데 로고"></a>
             </ul>
+            <button class="mobile-menu-btn">☰</button>
         </nav>
         <nav id="gnb">
             <h2 class="hidden">세븐일레븐 주요메뉴</h2>
@@ -62,7 +63,7 @@
             </ul>
         </nav>
     </header>
-    <div>
+    
         <div id="floating-box">
             <ul class="content">
                 <li class="nav02" style="left: 1300px"><a href="#" data-link="https://www.youtube.com/user/7elevenkorea"><img src="./images/youtube4.png" alt="YouTube"><span class="hidden">YouTube</span></a></li>
@@ -88,11 +89,12 @@
             <a href="#">2</a>
             <a href="#">3</a>
         </div>
+        <a href="#" id="playBtn">play</a>
     </section>
     <main>
-        <section id="product">
+        <section id="container">
             <h1 class="hidden">행사상품</h1>
-            <div class="title_product">
+            <div class="title_container">
                 <div class="title">
                     <h2>1월 행사상품</h2>
                 </div>
@@ -111,7 +113,9 @@
                     </li>
                 </ul>
             </div>
-            <div class="content_wrap">
+            </div>
+            <div class="product-list" id="productList">
+                <!-- 상품 목록이 동적으로 추가됨 -->
                 <ul>
                     <li><img src="./images/01_1.jpg" alt=""></li>
                     <li><img src="./images/01_2.jpg" alt=""></li>
@@ -121,29 +125,33 @@
             </div>
         </section>
         <hr>
-        <article>
-            <a href="#"><h2>7-EVEVEN 할인카드</h2>
-            <p>제휴 할인을 통해 다양한 할인과 부가 혜택을 누리세요.</p></a>
-        </article>
-        <article>
-            <a href="#"><h2>7-EVEVEN 멤버쉽 카드</h2>
-            <p>멤버쉽 카드로 결제하고 다양한 할인과 부가 혜택을 누리세요.</p></a>
-        </article>
-        <article>
-            <a href="#"><h2>7-EVEVEN 유튜브</h2>
-                <p></p></a>
-        </article>
-        <article>
-            <a href="#"><h2>7-EVEVEN 고객의 소리</h2>
-                <p class="poly">1577-0711</p>
+        <section class="features">
+            <h2>What We Offer</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"></div>
+                    <h3>할인카드 & 멤버쉽카드</h3>
+                    <p>포인트를 적립하고 특별 혜택을 받으세요.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"></div>
+                    <h3>고객의 소리</h3>
+                    <p class="poly">1577-0711</p>
                 <p>&middot;상담시간: 평일(9:00~18:00)</p>
                 <p>※토, 일요일 및 공휴일 휴무</p>
                 <p>신속하게 답변해드립니다.</p></a>
-        </article>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"></div>
+                    <h3>Mobile 주문</h3>
+                    <p>모바일 앱을 이용해 보다 편안 서비스를 이용해보세요.</p>
+                </div>
+            </div>
+        </section>
         <hr>
-        <div>
+        <div id="service">
             <h2 class="hidden">공지사항 및 기타 사항</h2>
-            <section id="notie">
+            <section class="notie">
                 <h3>공지사항</h3>
                 <a href="#">
                     <ul>
@@ -155,57 +163,53 @@
                     공지사항 더보기
                 </a>
             </section>
-            <ul id="qsvs_box">
-                <li class="service1"><a href="#">
-                    <span>
-                        멤버쉽 카드 등록
-                    </span></a></li>
-                <li class="service2"><a href="#">
-                    <span>
-                        어린이 미술대회
-                    </span></a></li>
-                <li class="service3"><a href="#">
-                    <span>
-                        상생협력
-                    </span></a></li>
-                <li class="service4"><a href="#">
-                    <span>
-                        서비스 안내
-                    </span></a></li>    
-            </ul>
-        </div>
-        <section>
-            <h2 class="hidden">창업안내</h2>
-            <div class="visual_bg">
-                <img src="./images/img_cont04_01.jpg" alt="">
+            <div id="qsvs_box">
+                <div class="service1"><a href="#">
+                    <h3>멤버쉽 카드 등록</h3></a>
+                </div>
+                <div class="service2"><a href="#">
+                    <h3>어린이 미술대회</h3></a>
+                </div>
+                <div class="service3"><a href="#">
+                    <h3>상생협력</h3></a>
+                </div>
+                <div class="service4"><a href="#">
+                    <h3>서비스 안내</h3></a>
+                </div>
             </div>
-                <ul class="cont_franchise">
-                    <li class="icon_franchise01"><a href="#"><strong>창업상담</strong>
-                    <span>"최고의 상품과 서비스로
-                        <br>
-                        "성공 창업을 도와드립니다."
-                    </span></a></li>
-                    <li class="icon_franchise02"><a href="#"><strong>가맹타입별조건</strong>
-                    <span>"성공창업의 길, 세븐일레븐이"
-                        <br>
-                        "최선을 다해 안내해드립니다."
-                    </span></a></li>
-                    <li class="icon_franchise03"><a href="#"><strong>창업설명회</strong>
-                        <span>"업계 1위의 브랜드를 자랑하는"
-                            <br>
-                            "세븐일레븐의 남다른 노화우!"
-                        </span></a></li>
-                    <li class="icon_franchise04"><a href="#"><strong>창업절차</strong>
-                            <span>"세븐일레븐 가맹점 대표님에게"
-                                <br>
-                                "성공 신화를 만들어 드립니다."
-                            </span></a></li>
-                    <li class="icon_franchise05"><a href="#"><strong>창업점포추천</strong>
-                            <span>"세븐일레븐이 추천하는"
-                                    <br>
-                                    "최상의 점포입니다."
-                            </span></a></li>            
-        </section>
+        </div>
+        <div class="startup_guide">
+            <div class="startup">
+                <img src="https://via.placeholder.com/150" alt="삼각김밥">
+                <h3>창업상담</h3>
+                <p>최고의 상품과 서비스로 성공 창업을 도와드립니다.</p>
+            </div>
+            <div class="startup">
+                <img src="https://via.placeholder.com/150" alt="도시락">
+                <h3>가맹타입별조건</h3>
+                <p>성공창업의 길, 세븐일레븐이 최선을 다해 안내해드립니다.</p>
+            </div>
+            <div class="startup">
+                <img src="https://via.placeholder.com/150" alt="컵라면">
+                <h3>창업설명회</h3>
+                <p>업계 1위의 브랜드를 자랑하는 세븐일레븐의 남다른 노화우!</p>
+            </div>
+            <div class="startup">
+                <img src="https://via.placeholder.com/150" alt="삼각김밥">
+                <h3>창업절차</h3>
+                <p>세븐일레븐 가맹점 대표님에게 성공 신화를 만들어 드립니다.</p>
+            </div>
+            <div class="startup">
+                <img src="https://via.placeholder.com/150" alt="도시락">
+                <h3>창업점포추천</h3>
+                <p>세븐일레븐이 추천하는 최상의 점포입니다.</p>
+            </div>
+            <div class="startup">
+                <img src="https://via.placeholder.com/150" alt="컵라면">
+                <h3>창업성공기</h3>
+                <p>단골고객을 사로잡는 것은 "꾸준한 진심"</p>
+            </div>
+        </div>
     </main>
     <footer>
             <div class="footer_top">

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>세련된 웹 페이지</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            padding: 10px;
+            background: #35424a;
+            color: #ffffff;
+        }
+        button {
+            background: #5cb85c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>세련된 웹 페이지</h1>
+        <nav>
+            <a href="#">홈</a>
+            <a href="#">소개</a>
+            <a href="#">연락처</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>환영합니다!</h2>
+        <p>이 페이지는 세련되고 깔끔한 디자인으로 구성되었습니다. HTML, CSS, JavaScript를 이용하여 작성되었습니다.</p>
+        <button id="welcomeButton">환영 메시지 보기</button>
+        <p id="welcomeMessage" style="display:none;">환영합니다! 즐거운 하루 되세요.</p>
+    </div>
+    <footer>
+        <p>&copy; 2025 세련된 웹 페이지 | 모든 권리 보유.</p>
+    </footer>
+    <script>
+        document.getElementById('welcomeButton').onclick = function() {
+            var message = document.getElementById('welcomeMessage');
+            message.style.display = message.style.display === 'none' ? 'block' : 'none';
+        };
+    </script>
+</body>
+</html>

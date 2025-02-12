@@ -1,0 +1,112 @@
+* {box-sizing: border-box;}
+/* {margin: 0; padding: 0;} */
+#wrap header .header_top .inner .logo a{size: 50px}
+ul, ol, li{list-style: none;}
+
+.hidden{overflow: hidden;
+    position: absolute;
+    width: 1px; 
+    height: 1px;
+    margin: -1px;
+    clip:rect(0,0,0,0);
+    }
+hr{display: none;}
+body, h1, h2, h3, p, ul, dl {margin: 0; padding: 0;}
+
+a{text-decoration: none; color: #000;}
+strong{font-weight: bold;}
+
+/* 헤더 스타일 */
+header {
+        position: relative; 
+        top: 0; left: 0; 
+        z-index: 99;
+        width: 100%; height: 100px; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #fffc;
+    padding: 10px 20px;
+     }
+#header h1 { 
+    width: 249px; height: 50px; margin-left: 32px; 
+}
+#header h1 a { display: block; height: 100%;
+               text-indent: 100%; }
+
+header h1 img {
+    height: 45px;
+}
+
+/* 멤버쉽 (로그인,점포찾기) */
+#membership {order:2; margin-right: 35px; }
+#membership ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+}
+#membership ul li .goStore { position: relative; padding-right: 9px;}
+#membership ul li .goStore::after {content: ""; height: 15px;
+                position: absolute; top: 5px; right: 0; 
+                border-right: 2px solid #333;}
+#membership ul li .goLogin { padding-left: 9px;
+    }    
+#membership ul li .goHomepage { padding-left: 10px;
+    }                   
+#membership ul li .goHomepage img{height: 30px;}
+
+/* 네비게이션 */
+#gnb{margin-top: 20px;
+     position: relative;}
+#gnbList { 
+    display: flex; 
+    column-gap: 50px; 
+    /* margin-right: 100px; */
+    list-style: none;
+    padding: 10px 0;
+    text-align: center;
+     }
+#gnbList li {
+    /* padding: 0 20px;  */
+    position: relative;
+    margin-right: 15px;
+    transition: 0.5s;}   
+/* #header.on #gnbList > li:hover .snb {background: #488cfb;}
+#header.on #gnbList > li:hover a{color: #fff;}  */
+#gnbList li a {
+    padding: 10px 15px; text-transform: uppercase;
+    text-decoration: none;
+              /* display: block;  */
+              /* line-height: 100px;  */
+              /* color: #000; */
+}
+#gnbList li a:hover { padding-bottom: 5px; color: #ff6e00;}
+
+/* 보조 네비게이션 */
+#gnbList li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    list-style: none;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 10;
+}
+#gnbList li ul li{
+    
+}
+#gnbList li ul li a {
+    color: #333;
+    padding: 5px 10px;
+}
+#gnbList li:hover ul {
+    display: block;
+}
+
+
+/* .snb { height: 250px; padding-top: 20px; }
+.snb li {line-height: 40px;}
+.snb li a {color: #000;} */

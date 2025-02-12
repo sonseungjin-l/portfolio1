@@ -1,0 +1,32 @@
+<section>
+            <h2 class="hidden">창업안내</h2>
+            <div class="visual_bg">
+                <img src="./images/img_cont04_01.jpg" alt="">
+            </div>
+                <ul class="cont_franchise">
+                    <li class="icon_franchise01"><a href="#"><strong>창업상담</strong>
+                    <span>"최고의 상품과 서비스로
+                        <br>
+                        "성공 창업을 도와드립니다."
+                    </span></a></li>
+                    <li class="icon_franchise02"><a href="#"><strong>가맹타입별조건</strong>
+                    <span>"성공창업의 길, 세븐일레븐이"
+                        <br>
+                        "최선을 다해 안내해드립니다."
+                    </span></a></li>
+                    <li class="icon_franchise03"><a href="#"><strong>창업설명회</strong>
+                        <span>"업계 1위의 브랜드를 자랑하는"
+                            <br>
+                            "세븐일레븐의 남다른 노화우!"
+                        </span></a></li>
+                    <li class="icon_franchise04"><a href="#"><strong>창업절차</strong>
+                            <span>"세븐일레븐 가맹점 대표님에게"
+                                <br>
+                                "성공 신화를 만들어 드립니다."
+                            </span></a></li>
+                    <li class="icon_franchise05"><a href="#"><strong>창업점포추천</strong>
+                            <span>"세븐일레븐이 추천하는"
+                                    <br>
+                                    "최상의 점포입니다."
+                            </span></a></li>            
+        </section>

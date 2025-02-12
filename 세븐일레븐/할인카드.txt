@@ -1,0 +1,23 @@
+할인카드
+
+<hr>
+        <article>
+            <a href="#"><h2>7-EVEVEN 할인카드</h2>
+            <p>제휴 할인을 통해 다양한 할인과 부가 혜택을 누리세요.</p></a>
+        </article>
+        <article>
+            <a href="#"><h2>7-EVEVEN 멤버쉽 카드</h2>
+            <p>멤버쉽 카드로 결제하고 다양한 할인과 부가 혜택을 누리세요.</p></a>
+        </article>
+        <article>
+            <a href="#"><h2>7-EVEVEN 유튜브</h2>
+                <p></p></a>
+        </article>
+        <article>
+            <a href="#"><h2>7-EVEVEN 고객의 소리</h2>
+                <p class="poly">1577-0711</p>
+                <p>&middot;상담시간: 평일(9:00~18:00)</p>
+                <p>※토, 일요일 및 공휴일 휴무</p>
+                <p>신속하게 답변해드립니다.</p></a>
+        </article>
+        <hr>
