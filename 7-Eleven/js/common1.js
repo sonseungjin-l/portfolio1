@@ -53,3 +53,5 @@ $("#gnbList li").hover(function(){
 // }
 
 // showProducts('1+1'); // 초기 표시
+
+//네비게이션 바

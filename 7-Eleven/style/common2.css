@@ -104,7 +104,7 @@ main div {
     display: block;
 }
 #container {
-    background: #007f4f;
+    background: #fff;
     flex-direction: column;
     display: flex;
     gap: 16px;
@@ -114,6 +114,7 @@ main div {
 .title h2{
     font-size: 2em;
     text-align: center;
+    color: #000;
 }
 
 
@@ -123,8 +124,9 @@ main div {
     color: #fff;
 }
 .title_container a{
-    color: #fff;
-    
+    font-weight: bold;
+    color: #000;
+    /* justify-content: center; */
 }
 .title_container a img {
     height: 20px;
@@ -134,8 +136,10 @@ main div {
     display: flex;
     gap: 20px;
     justify-content: left;
-    /* flex-direction: column; */
+    flex-direction: column;
     justify-content: center;
+    justify-content: space-evenly;
+    background: #007f4f;
 }
 .category{
     
@@ -234,11 +238,23 @@ article p {
 }
 
 .feature-icon {
-    width: 80px;
-    height: 80px;
-    background: #E31837;
-    border-radius: 50%;
+    /* width: 80px;
+    height: 80px; */
+    /* background: #E31837; */
+    /* border-radius: 50%; */
     margin: 0 auto 20px;
+}
+.feature-icon img{
+    width: 160px;
+    height: 100px;
+}
+.poly {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ee0000;
+}
+.time{
+    font-size: 18px;
 }
 
 .mobile-menu-btn {
