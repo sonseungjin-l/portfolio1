@@ -1,45 +1,7 @@
 @charset "utf-8";
 @import url(./header.css);
 
-#floating-box {
-    position: fixed; /* 화면에 고정 */
-    top: 250px;       /* 상단에서 10px 떨어짐 */
-    right: 5px;     /* 우측에서 10px 떨어짐 */
-    width: 85px;    /* 너비 */
-    padding: 15px;   /* 내부 여백 */
-    background-color: #ff6e00;  /*배경색 */
-    border: 1px solid #ff6e00;    /* 테두리 */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 */
-    border-radius: 35px;        /* 모서리 둥글게 */
-    z-index: 1000;             /* 다른 요소 위로 올라오게 설정 */
-}
 
-.content {
-    padding: 10px 1px;
-    /*height: 2000px;  긴 내용 테스트를 위한 높이 */
-    /* background: linear-gradient(to bottom, #ffffff, #e6e6e6); */
-    contain: content;
-    height: 110px;
-    /* background: #ffffff; */
-}
-.nav01 span{
-    font-size: 0.7974em;
-    font-weight: bold;
-    color: #000000;
-}
-.nav02 img{
-    height: 30px;
-    padding-left: 10px;
-}
-
-.nav03 img{
-    height: 30px;
-    padding-left: 10px;
-}
-
-.nav04 {
-    border: 1px solid #000;
-}
 #sliderWrap {overflow: hidden; position: relative;}
 #slider {position: relative; width: 100%; height: 600px;}
 #slider li {position: absolute;
@@ -49,7 +11,7 @@
     background: no-repeat center / cover
    }
 
-#slider li.slider1 { background-image: url(../images/images_bg2.png) }
+#slider li.slider1 { background-image: url(../images/bg1.jpg) }
 #slider li.slider2 { background-image: url(../images/bg2.jpg) }
 #slider li.slider3 { background-image: url(../images/bg3.jpg) }
 
@@ -103,7 +65,7 @@ main h2 {
 main div {
     display: block;
 }
-#container {
+.container {
     background: #fff;
     flex-direction: column;
     display: flex;
@@ -117,7 +79,65 @@ main div {
     color: #000;
     padding-top: 75px;
 }
+.container h2{
+    font-size: 2em;
+    text-align: center;
+}
+.view_more{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    position: relative;
+    height: 57px;
+    width: 100%;
+    margin: 0 auto 48px;
+}
+.view_more a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    transform: translate(0, -50%);
+    padding-right: 40px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+.view_more p{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #999;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+}
 
+.product_List {
+    width: 100%;
+}
+.product_List ul {
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+    
+}
+.product_List ul li{
+    width: 200px; height: 300px;
+    border: solid 1px #e1e1e1;
+    text-align: center;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+.product_List ul li img{
+    width: 60%;
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out
+}
+/* .product_List ul li  */
 
 .title_container {
     /* justify-content: left;
@@ -138,16 +158,16 @@ main div {
     height: 20px;
     color: #fff;
 }
-.categories {
+/* .categories {
     display: flex;
     gap: 50px
-}
+} */
 .category{
     /* float: center; */
     
 }
 
-.categories li img {
+.categories ul li img {
     width: 100%;
     max-width: 200px;
     border: 1px solid #ccc;
