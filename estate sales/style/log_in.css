@@ -1,0 +1,194 @@
+@charset "utf-8";
+@import url(./common.css);
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; line-height: inherit;
+    background-color: #f3f4f6;
+    font-family: Arial, sans-serif;
+}
+/* .login-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background: #0056b3;
+} */
+
+.login-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 28rem;
+    margin-top: 100px;
+    border-radius: 1rem;
+    align-items: center;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #2c3e50;
+}
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* margin-top: calc(1.5rem* calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.5rem* var(--tw-space-y-reverse)); */
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+#loginForm label {
+    text-align: left;
+    display: block;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    margin-bottom: 5px;
+    --tw-text-opacity: 1;
+    color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+}
+
+#loginForm #email {
+    width: 100%;
+    padding: 10px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    --tw-text-opacity: 1;
+    color: rgb(31 41 55 / var(--tw-text-opacity, 1));
+    --tw-bg-opacity: 1;
+    background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
+    --tw-border-opacity: 1;
+    border-color: rgb(209 213 219 / var(--tw-border-opacity, 1));
+    border-width: 1px;
+    margin-top: 0.25rem;
+}
+#loginForm #password {
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    border-radius: 0.5rem;
+    --tw-text-opacity: 1;
+    color: rgb(31 41 55 / var(--tw-text-opacity, 1));
+    --tw-bg-opacity: 1;
+    background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
+    --tw-border-opacity: 1;
+    border-color: rgb(209 213 219 / var(--tw-border-opacity, 1));
+    border-width: 1px;
+    margin-top: 0.25rem;
+}
+
+.login-container button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+    
+    /* margin-top: 25px; */
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+.Sigu_up{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.login-container div p {
+    position: absolute;
+    
+}
+
+.login-container p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.login-container a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+.Sigu_up{
+    margin-top: 100px;
+    text-align: center;
+    z-index: 1;
+}
+.Sigu_up h2{
+    height: 19px;
+    line-height: 19px;
+    position: relative;
+    z-index: 2;
+}
+.Sigu_up span{
+    font-size: 16px;
+    font-family: "Noto Sans Medium";
+    letter-spacing: -0.8px;
+    vertical-align: top;
+    display: inline-block;
+    padding: 0 16px;
+    /* font-size: 13px; */
+    line-height: 19px;
+    background-color: #fff;
+    z-index: 2;
+    height: 19px;
+
+}
+.Sigu_up button{
+    background-color: #fde500;
+    color: #3A1D1D;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+    padding-right: 100px;
+    padding-left: 100px;
+}

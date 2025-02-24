@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="./style/log_in.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1><a href="./index.html">승진부동산</a></h1>
+        <nav id="gnb">
+            <ul>
+                <li><a href="Comdpany.html">회사소개</a></li>
+                <li><a href="map.html">분양 지도</a></li>
+                <li><a href="notice.html">상담센터</a></li>
+            </ul>
+        </nav>
+        <nav class="membership">
+            <ul>
+                <li><a href="log_in.html">로그인</a></li>
+                <li><a href="Brokerage_office.html">중개사무소 가입 <br> 및 광고문의</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <section>
+    <div class="login-container">
+        <h2>로그인</h2>
+        <form id="loginForm">
+            <div>
+                <label for="email">이메일</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="password">비밀번호</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">로그인</button>
+        </form>
+        <div class="Sigu_up">
+            <p><a href="#">아이디/비밀번호 찾기</a></p>
+        
+        <p>계정이 없으신가요? <a href="#">회원가입</a></p>
+        <!-- sns 로그인 영역 -->
+         
+            <h2><span>간편 로그인</span></h2>
+            <button type="submit">카카오 계정으로 로그인</button>
+         </div>
+        
+    </div>
+</section>
+    
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("로그인 버튼이 클릭되었습니다.");
+});
+    </script>
+</body>
+</html>
